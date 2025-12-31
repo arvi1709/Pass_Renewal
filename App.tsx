@@ -137,7 +137,8 @@ const App: React.FC = () => {
   const shareViaWhatsApp = () => {
     const data = state.data as PassData;
     const cat = data.category === 'Custom' ? data.customCategory : data.category;
-    const text = `🎆 *2026 BOND RENEWAL* 🎆\n\nHey ${data.receiverName}! 💌 I just renewed our ${cat} bond for the new year!\n\nOfficial Certificate: "${data.aiMessage}"\n\nGenerated via BondPortal 2026 🥂`;
+    const appUrl = "https://frienshipass.netlify.app/"; // <--- REPLACE WITH YOUR DEPLOYED APP'S URL
+    const text = `🎆 *2026 BOND RENEWAL* 🎆\n\nHey ${data.receiverName}! 💌 I just renewed our ${cat} bond for the new year!\n\nOfficial Certificate: "${data.aiMessage}"\n\nCheck it out here: ${appUrl}\n\n(Don't forget to attach the image you just saved! 😉)`;
     window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
   };
 

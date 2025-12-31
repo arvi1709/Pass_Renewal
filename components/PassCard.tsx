@@ -111,7 +111,7 @@ export const PassCard: React.FC<PassCardProps> = ({ data, id }) => {
       <div className="absolute bottom-20 left-10 right-10 border-t-4 border-dotted border-gray-200/40"></div>
 
       {/* Theme Ribbon */}
-      <div className={`absolute top-0 right-10 w-10 h-16 bg-gradient-to-b ${THEME_STYLES[data.theme || 'Sakura']} rounded-b-xl shadow-lg flex items-center justify-center pt-8 border-x-2 border-white/30`}>
+      <div className={`absolute top-0 right-8 w-10 h-16 bg-gradient-to-b ${THEME_STYLES[data.theme || 'Sakura']} rounded-b-xl shadow-lg flex items-center justify-center pt-8 border-x-2 border-white/30`}>
         <span className="text-[9px] font-black text-white rotate-90 tracking-[0.2em] whitespace-nowrap">PREMIUM</span>
       </div>
     </div>
