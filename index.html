@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2026 Bond Renewal Portal 💌</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        overflow-x: hidden;
+      }
+      .bg-mesh {
+        background-color: #ffdee9;
+        background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+        background-attachment: fixed;
+      }
+      @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-20px) rotate(5deg); }
+        100% { transform: translateY(0px) rotate(0deg); }
+      }
+      .float-animation {
+        animation: float 4s ease-in-out infinite;
+      }
+      @keyframes pulse-soft {
+        0%, 100% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.05); opacity: 0.9; }
+      }
+      .pulse-animation {
+        animation: pulse-soft 2s ease-in-out infinite;
+      }
+      @keyframes shimmer {
+        0% { background-position: -200% 0; }
+        100% { background-position: 200% 0; }
+      }
+      .shimmer-text {
+        background: linear-gradient(90deg, #f43f5e 25%, #fb7185 50%, #f43f5e 75%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shimmer 3s linear infinite;
+      }
+      .shimmer-card {
+        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+        background-size: 200% 100%;
+        animation: shimmer 4s infinite;
+      }
+      .floating-particle {
+        position: fixed;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.3;
+        animation: float 6s ease-in-out infinite;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom": "https://esm.sh/react-dom@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.474.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "html-to-image": "https://esm.sh/html-to-image@^1.11.11",
+    "canvas-confetti": "https://esm.sh/canvas-confetti@^1.9.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-mesh min-h-screen">
+    <div id="root"></div>
+    <!-- Live floating background elements -->
+    <div class="floating-particle text-4xl top-10 left-10" style="animation-delay: 0s;">✨</div>
+    <div class="floating-particle text-3xl bottom-20 right-10" style="animation-delay: 1s;">🌸</div>
+    <div class="floating-particle text-5xl top-1/2 left-1/4" style="animation-delay: 2s;">💖</div>
+    <div class="floating-particle text-2xl bottom-1/4 right-1/3" style="animation-delay: 3s;">🥂</div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
